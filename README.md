@@ -1,95 +1,50 @@
-# Requirement Analysis in Software Development
+requirement-analysis
+Requirement Analysis in Software Development
 
-This repository documents the complete Requirement Analysis phase of a Booking Management System. The goal is to demonstrate how to identify, define, and structure software requirements in a professional and scalable way.
+In every software development project, proper requirements analysis is vital for the successful deployment of the project. This repository serves as a layout for the requirement analysis process in a project.
 
-This is a practical exercise in applying industry-standard techniques including:
-- Functional and non-functional requirements
-- Use case diagrams
-- Acceptance criteria
-- Requirement validation
+What is Requirement Analysis?
+Requirements analysis is a crucial phase in software development lifecycle (SDLC) where the project gathers, analyzes, and defines the requirements of the software product to be developed.
 
-The final output will serve as a comprehensive blueprint for developers and stakeholders alike.
+Why is Requirement Analysis Important?
+In the SDLC process, requirements analysis is important as it:
 
-## What is Requirement Analysis?
+Aids in clarity and understanding of what the stakeholder needs are
+Clearly defines the scope of the project, preventing scope creep
+Provides a solid foundation for designing and developing systems
+Facilitates accurate estimation of project cost, resource, and time
+Key Activities in Requirement Analysis
+Requirement Gathering - using interviews, surveys, and workshops to collect initial requirements from stakeholders.
+Requirement Elicitation - Refining and elaborating on the gathered requirements through brainstorming, focus groups, and prototyping techniques
+Requirement Documentation - Using requirement specification documents, user stories, and use cases to capture the requirements in a detailed and structured format.
+Requirement Analysis and Modeling - Creating models to visualize and understand requirements
+Requirement Validation - The review and validation of the requirements with stakeholders in addition to defining the acceptance criteria to ensure traceability
+Types of Requirements
+Functional Requirements
+Functional requirements describe what the system should do. For the case study provided, these are the functional requirements:
 
-Requirement Analysis is the process of identifying, gathering, and documenting the needs and expectations of stakeholders for a software system. It is one of the earliest and most critical stages of the Software Development Life Cycle (SDLC), serving as a blueprint for what the software should achieve and how it should behave.
+Hotel Management Service - The hotel managers/owners will be using this to manage hotel related information and services
+Customer Service (Search + Booking) - Here, customers can search and book a hotel
+Property listings/View Booking Service - a customer can view old and current bookings on the app.
+Non-functional Requirements
+Non-functional requirements describe how the system should perform. FOr the case study provided, these are the non-functional requirements:
 
-The process ensures that the project team fully understands what the users and business stakeholders want, which reduces misunderstandings and costly rework later in the project.
+Performance and Reliability - Content Delivery Network (CDN) and Message Queue Systems have to work together to provide fast delivery on Internet content
+Usability - The CDN app shows the content to customers like nearby hotels, recommendations, and offers
+Scalability - Archiving of old data, increasing the database (to handle increased queries) and handling a high volume of data is done with various Database Management Systems
+Performance - Through Redis, a caching server, requests made for recent data is readily available reducing the loading time on the app side
+Use Case Diagrams
+Use case diagrams serve as visual representation of interactions between users and the system. in the diagrams, identity actors such as guests or registered admin users get to interact with several use cases such as searching and booking of the desired properties
 
-Effective requirement analysis involves:
-- Engaging with users and stakeholders to elicit detailed needs
-- Defining what the system should do (functional requirements)
-- Clarifying non-functional aspects like performance, usability, and security
-- Validating and prioritizing requirements to align with business goals
+Benefits of Use Cases Diagrams:
 
-By translating stakeholder needs into clear, actionable documentation, Requirement Analysis lays the foundation for successful software design and implementation.
+They provide a clear visual representation of system functionalities
+They help in identifying and organizing system reqiurements
+They facilitate communication among stakeholders and development team
+alx-booking-uc
+![442533979-4f16c198-5620-40f6-9797-e67379356041](https://github.com/user-attachments/assets/7867ece0-908f-4705-9174-838dee6454c7)
 
-## Why is Requirement Analysis Important?
+Acceptance Criteria
+Acceptance criteria is needed to establish clear criteria for feature completion. It defines what is referred to as "Done" in a project or in sub-tasks related to a project thereby maintaining quality and meeting user expectations.
 
-Requirement Analysis plays a crucial role in the success of any software development project. Here’s why it matters:
-
-1. **Reduces the Risk of Project Failure**  
-   Clearly defining user and business needs early on helps avoid confusion and scope creep, minimizing costly mistakes during later stages of development.
-
-2. **Improves Communication Between Stakeholders**  
-   It ensures alignment between clients, users, developers, and project managers by translating expectations into a shared understanding documented in requirement artifacts.
-
-3. **Enables Better Planning and Estimation**  
-   With well-documented requirements, teams can estimate timelines, allocate resources, and define project milestones more accurately.
-
-4. **Acts as a Blueprint for Development and Testing**  
-   Functional and non-functional requirements guide developers on what to build and help QA teams verify whether the product meets expectations.
-
-5. **Supports Change Management**  
-   When changes arise, having a baseline of agreed-upon requirements makes it easier to evaluate the impact and update plans accordingly.
-
-## Key Activities in Requirement Analysis
-
-Requirement Analysis involves several structured activities to ensure the software aligns with stakeholder expectations and project goals. These include:
-
-- **Requirement Gathering**  
-  Collecting information from stakeholders, end users, and domain experts to understand what the system should achieve.
-
-- **Requirement Elicitation**  
-  Engaging with stakeholders through interviews, surveys, workshops, or observation to extract precise and actionable requirements.
-
-- **Requirement Documentation**  
-  Writing clear, organized, and structured descriptions of the gathered requirements using formats like user stories, SRS documents, or use case descriptions.
-
-- **Requirement Analysis and Modeling**  
-  Analyzing dependencies, conflicts, and feasibility among requirements. Modeling may involve diagrams like use case diagrams, data flow diagrams, or ER models.
-
-- **Requirement Validation**  
-  Reviewing requirements with stakeholders to ensure clarity, correctness, completeness, and alignment with business goals.
-
-Each activity builds toward a more precise and shared understanding of what the system should do before development begins.
-
-## Types of Requirements
-
-In software development, requirements are generally divided into two main categories: **Functional** and **Non-functional** requirements. Both are essential to building a complete and usable system.
-
----
-
-### 🔹 Functional Requirements
-
-Functional Requirements describe the specific features and capabilities that the system must provide. These answer the question: *“What should the system do?”*
-
-**Examples for Booking Management System:**
-- Users can create an account and log in
-- Users can search for available properties by date, location, and price
-- Users can book a property with a secure checkout process
-- Hosts can list new properties with availability and pricing
-- Admins can manage users and bookings
-
----
-
-### 🔸 Non-functional Requirements
-
-Non-functional Requirements define *how* the system performs under various conditions. These include usability, performance, security, and more.
-
-**Examples for Booking Management System:**
-- The platform should load any page in less than 2 seconds
-- The system should be available 99.9% of the time (high uptime)
-- User data must be encrypted during transmission and storage
-- The interface should be responsive and accessible on all device sizes
-- The system must support at least 10,000 concurrent users without performance degradation
+An example of acceptance criteria: "In the checkout journey of the booking process, a user must be able to select the arrival and departure dates from a drop-down calendar option. The selected dates should further be displayed on the reservation page and on the order confirmation email."
