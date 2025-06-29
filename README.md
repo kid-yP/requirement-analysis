@@ -42,3 +42,24 @@ Requirement Analysis plays a crucial role in the success of any software develop
 
 5. **Supports Change Management**  
    When changes arise, having a baseline of agreed-upon requirements makes it easier to evaluate the impact and update plans accordingly.
+
+## Key Activities in Requirement Analysis
+
+Requirement Analysis involves several structured activities to ensure the software aligns with stakeholder expectations and project goals. These include:
+
+- **Requirement Gathering**  
+  Collecting information from stakeholders, end users, and domain experts to understand what the system should achieve.
+
+- **Requirement Elicitation**  
+  Engaging with stakeholders through interviews, surveys, workshops, or observation to extract precise and actionable requirements.
+
+- **Requirement Documentation**  
+  Writing clear, organized, and structured descriptions of the gathered requirements using formats like user stories, SRS documents, or use case descriptions.
+
+- **Requirement Analysis and Modeling**  
+  Analyzing dependencies, conflicts, and feasibility among requirements. Modeling may involve diagrams like use case diagrams, data flow diagrams, or ER models.
+
+- **Requirement Validation**  
+  Reviewing requirements with stakeholders to ensure clarity, correctness, completeness, and alignment with business goals.
+
+Each activity builds toward a more precise and shared understanding of what the system should do before development begins.
